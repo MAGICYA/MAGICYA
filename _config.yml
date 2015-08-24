@@ -120,9 +120,9 @@ baseurl: /MAGICYA
 markdown: redcarpet
 safe: false
 highlighter: pygments
-title: 飞鸟集
-description: 人生到处知何似，应似飞鸿踏雪泥
-theme: kunka
+title: magicya的技术博客
+description: 海纳百川，有容乃大；壁立千仞，无欲则刚
+theme: minimal
 disqusname: minixalpha
 
 # theme can be: hack, leap-day, merlot, midnight, minimal, modernist, slate, time-machine, kunka
