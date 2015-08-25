@@ -1,13 +1,14 @@
 ---
 layout: post
-title: SDWebImage源码解析10:05
+title: SDWebImage源码解析10:09
 category: iOS
 comments: false
 ---
 
 调用UIImageView+WebCache
+
 ```Objective-C
-- (void)sd_setImageWithURL:(NSURL *)url placeholderImage:(UIImage *)placeholder options:(SDWebImageOptions)options progress:(SDWebImageDownloaderProgressBlock)progressBlock completed:(SDWebImageCompletionBlock)completedBlock
+    - (void)sd_setImageWithURL:(NSURL *)url placeholderImage:(UIImage *)placeholder options:(SDWebImageOptions)options progress:(SDWebImageDownloaderProgressBlock)progressBlock completed:(SDWebImageCompletionBlock)completedBlock
 {
   id <SDWebImageOperation> operation = [SDWebImageManager.sharedManager downloadImageWithURL:url options:options progress:progressBlock completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType, BOOL finished, NSURL *imageURL) 
   {
@@ -23,8 +24,9 @@ comments: false
 }
 ```
 SDWebImageManager--单例
+
 ```Objective-C
-- (id <SDWebImageOperation>)downloadImageWithURL:(NSURL *)url
+    - (id <SDWebImageOperation>)downloadImageWithURL:(NSURL *)url
                                          options:(SDWebImageOptions)options
                                         progress:(SDWebImageDownloaderProgressBlock)progressBlock
                                        completed:(SDWebImageCompletionWithFinishedBlock)completedBlock 
