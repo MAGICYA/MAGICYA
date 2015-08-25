@@ -2,12 +2,13 @@
 ---
 layout: post
 title: SDWebImage源码解析
-tag: iOS
+category: iOS
 ---
 
 #SDWebImage源码解析
 调用
 UIImageView+WebCache
+```
   - (void)sd_setImageWithURL:(NSURL *)url placeholderImage:(UIImage *)placeholder options:(SDWebImageOptions)options progress:(SDWebImageDownloaderProgressBlock)progressBlock completed:(SDWebImageCompletionBlock)completedBlock {
       id <SDWebImageOperation> operation = [SDWebImageManager.sharedManager downloadImageWithURL:url options:options progress:progressBlock completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType, BOOL finished, NSURL *imageURL) {
         dispatch_main_sync_safe(^{
@@ -20,3 +21,4 @@ UIImageView+WebCache
       }];
     [self sd_setImageLoadOperation:operation forKey:@"UIImageViewImageLoad"];
   }
+```
