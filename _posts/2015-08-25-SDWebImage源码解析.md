@@ -3,6 +3,7 @@
 layout: post
 title: SDWebImage源码解析
 category: iOS
+comments: false
 ---
 
 #SDWebImage源码解析
