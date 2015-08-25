@@ -122,7 +122,7 @@ safe: false
 highlighter: pygments
 title: magicya的技术博客
 description: 海纳百川，有容乃大；壁立千仞，无欲则刚
-theme: minimal
+theme: modernist
 disqusname: minixalpha
 
 # theme can be: hack, leap-day, merlot, midnight, minimal, modernist, slate, time-machine, kunka
