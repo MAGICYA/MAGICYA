@@ -20,10 +20,10 @@ comments: false
       }
     });
   }];
-  [self sd_setImageLoadOperation:operation forKey:@"UIImageViewImageLoad"];
+  >[self sd_setImageLoadOperation:operation forKey:@"UIImageViewImageLoad"];
 }
 ```
-SDWebImageManager--单例
+>SDWebImageManager--单例
 
 ```Objective-C
     - (id <SDWebImageOperation>)downloadImageWithURL:(NSURL *)url
